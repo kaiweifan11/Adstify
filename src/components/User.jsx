@@ -10,6 +10,7 @@ const usernameStyle ={
 
 const User = (props) =>{
     const { user, screenSize } = props;
+    console.log('screenSize', screenSize)
 
     return (
         <Flex align={'top'} style={{height: "60px"}}>
