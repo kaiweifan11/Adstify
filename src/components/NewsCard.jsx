@@ -5,10 +5,10 @@ const { Text } = Typography;
 
 const titleStyle = {
     fontWeight: 600,
-    fontSize: 20,
+    fontSize: 16,
 }
 const sourceStyle = {
-    fontSize: 16, 
+    fontSize: 14, 
     color: 'gray'
 }
 

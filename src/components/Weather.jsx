@@ -26,12 +26,17 @@ const Weather = (props) =>{
     return (
         <Row style={{textAlign: 'center'}}>
             <Col span={24} style={{display: "flex", justifyContent: "center", alignItems: "flex-start"}}>
-            <img src={currWeather?.condition?.icon} />
+                <img src={currWeather?.condition?.icon} />
                 <Text style={tempStyle}>
                     {currWeather.temp_c}
                 </Text>
                 <Text style={unitStyle}>
                      °C
+                </Text>
+            </Col>
+            <Col span={24}>
+                <Text style={descriptionStyle}>
+                    { currWeather?.condition?.text }
                 </Text>
             </Col>
             <Col span={24}>
@@ -42,11 +47,6 @@ const Weather = (props) =>{
             <Col span={24}>
                 <Text style={descriptionStyle}>
                     Feels like: { currWeather.feelslike_c } °C
-                </Text>
-            </Col>
-            <Col span={24}>
-                <Text style={descriptionStyle}>
-                    Condition: { currWeather?.condition?.text }
                 </Text>
             </Col>
         </Row>
