@@ -111,7 +111,7 @@ const App = () =>{
     return (
         <Row style={{width: "100%"}}>
             <Col span={12} style={{padding: "24px"}}> 
-                <img src={logo} />
+                <img src={logo} width={"262px"} height={"76px"} />
             </Col>
             <Col span={12} style={{padding: "24px", display: "flex", justifyContent: "right"}}> 
                 <User user={user} screenSize={screenSize} />
