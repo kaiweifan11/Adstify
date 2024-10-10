@@ -1,8 +1,8 @@
 # Adstify
+The static webpage is deployed @ https://adstify.onrender.com/
 
 Currently the search box only takes in the following keywords:
 arts, home, science, us, world
-
 
 ## Steps to deploy locally:
 1) Clone the repo
