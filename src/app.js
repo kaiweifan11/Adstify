@@ -34,7 +34,6 @@ const openNotification = ({title, description}) => {
     });
 };
 
-  
 const App = () =>{
     const [ user, setUser ] = useState({});
     const [ news, setNews ] = useState([defaultArticle, defaultArticle, defaultArticle, defaultArticle]);
@@ -82,7 +81,7 @@ const App = () =>{
     const getWeather = () =>{
         axios({
             method: 'get',
-            url: 'http://api.weatherapi.com/v1/current.json?q=singapore&key=' + WEATHER_API_KEY,
+            url: 'https://api.weatherapi.com/v1/current.json?q=singapore&key=' + WEATHER_API_KEY,
         })
         .then(function (response) {
             if(response?.data?.current) setCurrWeather(response.data.current);
